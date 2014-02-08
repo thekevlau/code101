@@ -1,11 +1,18 @@
-function userChoice
-userChoice = prompt("Rock, Paper or Scizzors?");
-if (userChoice != "Rock" || "Paper" || "Scissors") {
-    console.log("inappropriate input. try again!");
+//based on the CodeAcademy JS tutorial, but I've added more detail to the specified implementation.
+
+function getInput () {
+do {
+    userChoice = prompt("Rock, Paper or Scissors?");
+}
+while (userChoice != "Rock" && userChoice != "Paper" && userChoice != "Scissors");
+console.log("Your choice is: " + userChoice);
+return userChoice;
 
 }
 
-console.log("Your choice is: " + userChoice);
+userChoice = getInput(userChoice);
+
+
 
 computerChoice = Math.random();
 console.log(computerChoice);
