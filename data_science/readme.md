@@ -2,7 +2,7 @@
 
 #### The Story:
 
-Me learning data science (from scratch) from a Udacity course in order to work on my hackathon project for PennApps W2014.
+Me learning data science (from scratch) from a Udacity course in order to work on my hackathon project for PennApps W2014. Current learning project: modelling death rates from the titanic
 
 PennApps W2014 was held over valentines day, and I had been conveniently been nominated to do a random act of kindness on this day.
 I decided to give out hugs to random hackers throughout the day, and I collected a data set of my hug success rate over time with respect to social situations.
