@@ -35,13 +35,12 @@ class linkedlist:
 		return currentNode
 
 	def __init__(self):
-		self.first=linkedlist.__node()
 		self.length = 0
+		self.first_node = linkedlist.__node()
+		self.last_node = self.first_node
 
 	def __len__(self):
 		return self.length
-
-
 
 
 	#add to front
@@ -51,14 +50,14 @@ class linkedlist:
 		self.first.setNext(to_add)
 		self.length+=1
 
-	#pop front value	
+	#pop front value
 	def popFront(self):
 		if self.length > 1:
 			val = self.first.getNext().getElement()
 			self.first.setNext((self.first.getNext().getNext())
 			self.length-1
 			return val
-		else: 
+		else:
 			return IndexError("pop from empty list")
 	#add to back
 	def append(self, value):
@@ -89,7 +88,7 @@ class linkedlist:
 		return val
 		#remove
 
-	#insert in some specified location (index) where 
+	#insert in some specified location (index) where
 	def insert (self, index=None, value):
 		#if out of bounds
 		if index > self.getLength+1 or index < 0:
@@ -120,19 +119,10 @@ class linkedlist:
 				start = 0
 			else:
 				start = self.length-1
-		else: 
+		else:
 			start = theSlice.start
 
 		for eachitem in range(start,stop,step):
 			retList.append(self.__getitem(eachItem))
 
 		return retList
-
-
-
-
-
-
-
-
-
